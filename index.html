@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Meu Site</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Meu site - joelsonbr</title>
   </head>
   <body>
-    <h1>Cadastro</h1>
-    <div id="container">
-      <div id="name-user">
-        <label for="nome_usuario">Nome de Usuário:</label>
-        <input type="text" id="nome_usuario" name="nome_usuario" required />
+    <div class="login-container">
+      <h2>Fazer Login</h2>
+
+      <div class="input-group">
+        <label for="email_usuario">Nome de Usuário ou Email:</label>
+        <input type="text" id="email_usuario" required />
       </div>
-      <div id="senha-user">
+
+      <div class="input-group">
         <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required />
+        <input type="password" id="senha" required />
       </div>
-      <button type="submit" id="btn-submit">Cadastrar</button>
+
+      <button type="submit" id="btn" class="btn-login">Entrar</button>
+
+      <!-- O link que você pediu -->
+      <p class="signup-link">
+        Não tem uma conta? <a href="#">Cadastre-se agora</a>
+      </p>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
